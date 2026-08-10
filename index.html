@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Richard Sartell | Electrical &amp; Computer Engineer</title>
+    <meta
+      name="description"
+      content="Engineering portfolio for Richard Sartell, focused on embedded firmware, Linux systems, electronics, PCB work, hardware/software interfaces, and verification."
+    >
+    <meta property="og:title" content="Richard Sartell | Electrical &amp; Computer Engineer">
+    <meta
+      property="og:description"
+      content="Embedded systems, Linux systems engineering, electronics, digital hardware, and verification portfolio."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thaisartell.github.io/">
+    <meta property="og:image" content="assets/images/og-card.svg">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Richard Sartell home">
+          <span class="brand-mark" aria-hidden="true">RS</span>
+          <span>Richard Sartell</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section">
+        <div class="hero-content">
+          <p class="eyebrow">Electrical &amp; Computer Engineer</p>
+          <h1>Richard Sartell</h1>
+          <p class="hero-subtitle">Embedded Systems &middot; Linux &middot; Electronics &middot; Digital Hardware</p>
+          <p class="hero-copy">
+            Computer engineering portfolio focused on embedded firmware, Linux systems engineering,
+            hardware/software interfaces, electronics, PCB validation, and verification-driven debugging.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button button-primary" href="#projects">Projects</a>
+            <a class="button button-secondary" href="assets/resume/richard-sartell-resume.pdf">Resume</a>
+            <!-- TODO: Replace # with Richard's GitHub profile URL. -->
+            <a class="button button-secondary placeholder-link" href="#" aria-label="GitHub profile URL pending">GitHub</a>
+            <!-- TODO: Replace # with Richard's LinkedIn profile URL. -->
+            <a class="button button-secondary placeholder-link" href="#" aria-label="LinkedIn profile URL pending">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Engineering focus areas">
+          <div class="signal-strip" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h2>Engineering Focus</h2>
+          <dl class="focus-list">
+            <div>
+              <dt>Firmware</dt>
+              <dd>MCU control, state machines, serial interfaces, host protocols</dd>
+            </div>
+            <div>
+              <dt>Systems</dt>
+              <dd>Linux networking, services, diagnostics, automation</dd>
+            </div>
+            <div>
+              <dt>Hardware</dt>
+              <dd>PCB design, analog front ends, validation, bench debugging</dd>
+            </div>
+            <div>
+              <dt>Verification</dt>
+              <dd>HIL tests, CI workflows, unit testing, compliance checks</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section section-compact intro-band" aria-label="Portfolio summary">
+        <div class="summary-grid">
+          <div>
+            <span class="metric-label">Graduation</span>
+            <strong>December 2026</strong>
+            <span>University of Minnesota</span>
+          </div>
+          <div>
+            <span class="metric-label">Primary Domains</span>
+            <strong>Embedded + Linux</strong>
+            <span>Firmware, systems, electronics</span>
+          </div>
+          <div>
+            <span class="metric-label">Work Style</span>
+            <strong>Architecture to Debug</strong>
+            <span>Interfaces, verification, ownership</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Engineering Work</p>
+          <h2 id="projects-heading">Projects</h2>
+          <p>
+            Each project emphasizes system boundaries, implementation decisions, hardware/software interfaces,
+            and verification work. Detailed case studies are scaffolded for expansion.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-case" id="project-syndex">
+            <div class="project-copy">
+              <div class="project-kicker">
+                <span>01</span>
+                <span>STRIVE Medical, University of Minnesota</span>
+              </div>
+              <h3>SynDex</h3>
+              <p class="project-subtitle">Robotic Surgical Simulation System</p>
+              <p>
+                Desktop robotic surgical training device using a Teensy 4.1 supervisory controller to coordinate
+                sensors, motor controllers, and a Unity host simulation.
+              </p>
+              <dl class="project-meta">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Lead Firmware Engineer</dd>
+                </div>
+                <div>
+                  <dt>Context</dt>
+                  <dd>STRIVE Medical, University of Minnesota</dd>
+                </div>
+              </dl>
+              <ul class="contribution-list">
+                <li>Led firmware development across multiple contributors.</li>
+                <li>Coordinated firmware architecture, priorities, and interfaces across electrical, software, and project leadership teams.</li>
+                <li>Implemented embedded state-machine infrastructure.</li>
+                <li>Developed infrastructure for I2C encoder acquisition and custom USB host-device communication.</li>
+              </ul>
+              <ul class="tech-list" aria-label="SynDex technologies">
+                <li>C/C++</li>
+                <li>Teensy 4.1</li>
+                <li>USB-CDC</li>
+                <li>I2C</li>
+                <li>CAN</li>
+                <li>ODrive</li>
+                <li>Unity</li>
+                <li>Git</li>
+              </ul>
+              <a class="project-link" href="projects/syndex.html">View Project</a>
+            </div>
+
+            <div class="project-media">
+              <figure class="diagram-card" aria-labelledby="syndex-architecture-title">
+                <!-- TODO: Replace or refine labels when SynDex interface details are finalized. -->
+                <svg class="diagram-svg" viewBox="0 0 760 430" role="img" aria-labelledby="syndex-architecture-title syndex-architecture-desc">
+                  <title id="syndex-architecture-title">SynDex system architecture diagram</title>
+                  <desc id="syndex-architecture-desc">
+                    Joint encoders connect to a Teensy 4.1 over I2C, the Teensy connects to a Unity host over USB,
+                    and the Teensy connects to ODrive motor controllers over CAN.
+                  </desc>
+                  <defs>
+                    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                      <path d="M 0 0 L 10 5 L 0 10 z"></path>
+                    </marker>
+                  </defs>
+                  <rect class="node node-source" x="280" y="32" width="200" height="64" rx="8"></rect>
+                  <text class="node-title" x="380" y="58" text-anchor="middle">Joint Encoders</text>
+                  <text class="node-subtitle" x="380" y="78" text-anchor="middle">Magnetic rotary sensing</text>
+
+                  <rect class="node node-core" x="280" y="178" width="200" height="76" rx="8"></rect>
+                  <text class="node-title" x="380" y="208" text-anchor="middle">Teensy 4.1</text>
+                  <text class="node-subtitle" x="380" y="230" text-anchor="middle">Supervisory controller</text>
+
+                  <rect class="node" x="32" y="184" width="188" height="64" rx="8"></rect>
+                  <text class="node-title" x="126" y="211" text-anchor="middle">Unity Host</text>
+                  <text class="node-subtitle" x="126" y="231" text-anchor="middle">Simulation runtime</text>
+
+                  <rect class="node" x="280" y="326" width="200" height="64" rx="8"></rect>
+                  <text class="node-title" x="380" y="353" text-anchor="middle">ODrive Controllers</text>
+                  <text class="node-subtitle" x="380" y="373" text-anchor="middle">Motor control</text>
+
+                  <line class="signal-line" x1="380" y1="100" x2="380" y2="170" marker-end="url(#arrow)"></line>
+                  <text class="signal-label" x="405" y="140">I2C</text>
+
+                  <line class="signal-line bidirectional" x1="228" y1="216" x2="272" y2="216" marker-start="url(#arrow)" marker-end="url(#arrow)"></line>
+                  <text class="signal-label" x="250" y="200" text-anchor="middle">USB</text>
+
+                  <line class="signal-line" x1="380" y1="262" x2="380" y2="318" marker-end="url(#arrow)"></line>
+                  <text class="signal-label" x="405" y="296">CAN</text>
+                </svg>
+                <figcaption>Original simplified architecture diagram.</figcaption>
+              </figure>
+
+              <figure class="diagram-card compact-diagram" aria-labelledby="syndex-state-title">
+                <!-- State labels are intentionally limited to confirmed states: Boot, Idle, Connected, Homing, Ready, Error. -->
+                <svg class="diagram-svg" viewBox="0 0 760 210" role="img" aria-labelledby="syndex-state-title syndex-state-desc">
+                  <title id="syndex-state-title">SynDex firmware state-machine visual</title>
+                  <desc id="syndex-state-desc">Firmware states shown as Boot, Idle, Connected, Homing, Ready, and Error.</desc>
+                  <defs>
+                    <marker id="state-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                      <path d="M 0 0 L 10 5 L 0 10 z"></path>
+                    </marker>
+                  </defs>
+                  <g class="state-row">
+                    <rect class="state-node" x="24" y="58" width="96" height="48" rx="8"></rect>
+                    <text x="72" y="88" text-anchor="middle">Boot</text>
+                    <rect class="state-node" x="154" y="58" width="96" height="48" rx="8"></rect>
+                    <text x="202" y="88" text-anchor="middle">Idle</text>
+                    <rect class="state-node" x="284" y="58" width="124" height="48" rx="8"></rect>
+                    <text x="346" y="88" text-anchor="middle">Connected</text>
+                    <rect class="state-node" x="442" y="58" width="112" height="48" rx="8"></rect>
+                    <text x="498" y="88" text-anchor="middle">Homing</text>
+                    <rect class="state-node" x="588" y="58" width="96" height="48" rx="8"></rect>
+                    <text x="636" y="88" text-anchor="middle">Ready</text>
+                    <line class="signal-line" x1="122" y1="82" x2="146" y2="82" marker-end="url(#state-arrow)"></line>
+                    <line class="signal-line" x1="252" y1="82" x2="276" y2="82" marker-end="url(#state-arrow)"></line>
+                    <line class="signal-line" x1="410" y1="82" x2="434" y2="82" marker-end="url(#state-arrow)"></line>
+                    <line class="signal-line" x1="556" y1="82" x2="580" y2="82" marker-end="url(#state-arrow)"></line>
+                  </g>
+                  <rect class="state-node error-node" x="316" y="146" width="128" height="48" rx="8"></rect>
+                  <text x="380" y="176" text-anchor="middle">Error</text>
+                  <path class="signal-line dashed" d="M 380 112 C 380 130, 380 132, 380 140" marker-end="url(#state-arrow)"></path>
+                </svg>
+                <figcaption>Firmware state-machine visual with confirmed state names only.</figcaption>
+              </figure>
+
+              <div class="asset-placeholder" role="img" aria-label="SynDex hardware image placeholder">
+                <!-- TODO: Replace with an approved SynDex hardware photo or test setup image. -->
+                [ SynDex hardware image ]
+              </div>
+            </div>
+          </article>
+
+          <article class="project-case" id="project-linux-ics">
+            <div class="project-copy">
+              <div class="project-kicker">
+                <span>02</span>
+                <span>Boston Scientific</span>
+              </div>
+              <h3>Linux Internet Connection Sharing Service</h3>
+              <p class="project-subtitle">R&amp;D Systems Engineering Internship</p>
+              <p>
+                Bash-based Linux service supporting runtime connectivity for a medical imaging platform through
+                automated network configuration, forwarding, NAT, firewall management, and diagnostics.
+              </p>
+              <dl class="project-meta">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Systems engineering intern</dd>
+                </div>
+                <div>
+                  <dt>Confidentiality</dt>
+                  <dd>Sanitized capability-level description only</dd>
+                </div>
+              </dl>
+              <ul class="contribution-list">
+                <li>Designed and implemented a Bash/systemd Internet Connection Sharing service for Linux runtime connectivity.</li>
+                <li>Automated Ethernet discovery, IP configuration, IPv4 forwarding, DNS forwarding, NAT, and firewall rule management.</li>
+                <li>Developed a diagnostic service capturing interface state, service health, addressing, routing, forwarding, and firewall/NAT configuration.</li>
+                <li>Documented behavior at the service and diagnostic level without exposing protected product details.</li>
+              </ul>
+              <ul class="tech-list" aria-label="Linux Internet Connection Sharing technologies">
+                <li>Linux</li>
+                <li>Bash</li>
+                <li>systemd</li>
+                <li>iptables</li>
+                <li>IPv4</li>
+                <li>routing</li>
+                <li>NAT</li>
+                <li>DNS</li>
+                <li>Ethernet</li>
+              </ul>
+              <a class="project-link" href="projects/linux-internet-connection-sharing.html">View Project</a>
+            </div>
+
+            <div class="project-media">
+              <figure class="diagram-card" aria-labelledby="linux-ics-title">
+                <!-- Sanitized conceptual architecture. Do not add proprietary device names, IP addresses, screenshots, or topology. -->
+                <svg class="diagram-svg" viewBox="0 0 760 440" role="img" aria-labelledby="linux-ics-title linux-ics-desc">
+                  <title id="linux-ics-title">Sanitized conceptual architecture for Linux Internet Connection Sharing</title>
+                  <desc id="linux-ics-desc">
+                    External network connects to a Linux system that performs interface discovery, configuration,
+                    forwarding, NAT, firewall handling, and diagnostics before a restricted network.
+                  </desc>
+                  <defs>
+                    <marker id="net-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                      <path d="M 0 0 L 10 5 L 0 10 z"></path>
+                    </marker>
+                  </defs>
+                  <text class="diagram-heading" x="380" y="38" text-anchor="middle">Sanitized conceptual architecture</text>
+                  <rect class="node" x="270" y="64" width="220" height="58" rx="8"></rect>
+                  <text class="node-title" x="380" y="99" text-anchor="middle">External Network</text>
+
+                  <rect class="node node-core" x="190" y="174" width="380" height="150" rx="8"></rect>
+                  <text class="node-title" x="380" y="205" text-anchor="middle">Linux System</text>
+                  <text class="node-subtitle" x="380" y="230" text-anchor="middle">Interface Discovery &middot; Network Configuration</text>
+                  <text class="node-subtitle" x="380" y="254" text-anchor="middle">Routing / Forwarding &middot; NAT</text>
+                  <text class="node-subtitle" x="380" y="278" text-anchor="middle">Firewall &middot; Diagnostics</text>
+
+                  <rect class="node" x="270" y="374" width="220" height="58" rx="8"></rect>
+                  <text class="node-title" x="380" y="409" text-anchor="middle">Restricted Network</text>
+
+                  <line class="signal-line" x1="380" y1="130" x2="380" y2="166" marker-end="url(#net-arrow)"></line>
+                  <line class="signal-line" x1="380" y1="332" x2="380" y2="366" marker-end="url(#net-arrow)"></line>
+                </svg>
+                <figcaption>Conceptual diagram only; no proprietary topology or configuration is shown.</figcaption>
+              </figure>
+
+              <div class="terminal-panel" aria-label="Sanitized Linux diagnostics categories">
+                <div class="terminal-row"><span>$</span> network-diagnostics</div>
+                <ul>
+                  <li>interfaces: discovered</li>
+                  <li>systemd: service health</li>
+                  <li>routing: table snapshot</li>
+                  <li>forwarding: IPv4 state</li>
+                  <li>firewall: NAT rules summary</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-case" id="project-smart-nas">
+            <div class="project-copy">
+              <div class="project-kicker">
+                <span>03</span>
+                <span>Senior Design Project</span>
+              </div>
+              <h3>Smart Network-Attached Storage</h3>
+              <p class="project-subtitle">Embedded control and hardware validation</p>
+              <p>
+                Senior design work on firmware and electrical validation for an automated wireless file-backup system.
+              </p>
+              <dl class="project-meta">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Firmware and electrical validation contributor</dd>
+                </div>
+                <div>
+                  <dt>Scope</dt>
+                  <dd>Confirmed details only; architecture placeholders remain editable</dd>
+                </div>
+              </dl>
+              <ul class="contribution-list">
+                <li>Developed Raspberry Pi Pico 2 W firmware processing captive-portal requests for user control.</li>
+                <li>Worked at the embedded web/control boundary for wireless backup behavior.</li>
+                <li>Validated an over-voltage protection circuit through structured electrical stress testing.</li>
+                <li>Evaluated PCB design updates for over-voltage protection and connector integration.</li>
+              </ul>
+              <ul class="tech-list" aria-label="Smart Network-Attached Storage technologies">
+                <li>Raspberry Pi Pico 2 W</li>
+                <li>C/C++</li>
+                <li>embedded networking</li>
+                <li>Wi-Fi</li>
+                <li>HTTP</li>
+                <li>GPIO</li>
+                <li>PCB validation</li>
+              </ul>
+              <a class="project-link" href="projects/smart-network-attached-storage.html">View Project</a>
+            </div>
+
+            <div class="project-media">
+              <figure class="diagram-card" aria-labelledby="smart-nas-title">
+                <!-- TODO: Confirm exact Smart NAS storage/compute architecture before replacing this conceptual diagram. -->
+                <svg class="diagram-svg" viewBox="0 0 760 430" role="img" aria-labelledby="smart-nas-title smart-nas-desc">
+                  <title id="smart-nas-title">Smart Network-Attached Storage conceptual architecture</title>
+                  <desc id="smart-nas-desc">
+                    User device connects by Wi-Fi to a Pico 2 W running embedded web and control firmware, then to a storage or compute system over GPIO or control signals.
+                  </desc>
+                  <defs>
+                    <marker id="nas-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                      <path d="M 0 0 L 10 5 L 0 10 z"></path>
+                    </marker>
+                  </defs>
+                  <rect class="node" x="270" y="36" width="220" height="58" rx="8"></rect>
+                  <text class="node-title" x="380" y="71" text-anchor="middle">User Device</text>
+
+                  <rect class="node node-core" x="230" y="168" width="300" height="86" rx="8"></rect>
+                  <text class="node-title" x="380" y="200" text-anchor="middle">Pico 2 W</text>
+                  <text class="node-subtitle" x="380" y="224" text-anchor="middle">Embedded Web / Control Firmware</text>
+
+                  <rect class="node" x="240" y="338" width="280" height="58" rx="8"></rect>
+                  <text class="node-title" x="380" y="373" text-anchor="middle">Storage / Compute System</text>
+
+                  <line class="signal-line" x1="380" y1="102" x2="380" y2="160" marker-end="url(#nas-arrow)"></line>
+                  <text class="signal-label" x="405" y="134">Wi-Fi</text>
+                  <line class="signal-line" x1="380" y1="262" x2="380" y2="330" marker-end="url(#nas-arrow)"></line>
+                  <text class="signal-label" x="405" y="300">GPIO / Control</text>
+                </svg>
+                <figcaption>Conceptual placeholder pending confirmed NAS architecture details.</figcaption>
+              </figure>
+
+              <div class="validation-panel">
+                <h4>Hardware Validation</h4>
+                <div class="validation-steps" aria-label="Hardware validation areas">
+                  <span>OVP circuit testing</span>
+                  <span>PCB integration</span>
+                  <span>Electrical validation</span>
+                </div>
+              </div>
+
+              <div class="asset-placeholder" role="img" aria-label="Smart NAS prototype image placeholder">
+                <!-- TODO: Replace with a Smart NAS prototype photo or approved PCB image. -->
+                [ Smart NAS prototype image ]
+              </div>
+            </div>
+          </article>
+
+          <article class="project-case" id="project-ecg">
+            <div class="project-copy">
+              <div class="project-kicker">
+                <span>04</span>
+                <span>Junior Design Project</span>
+              </div>
+              <h3>Electrocardiogram Acquisition System</h3>
+              <p class="project-subtitle">Analog front end, PCB, MCU acquisition, UART visualization</p>
+              <p>
+                ECG signal acquisition PCB and firmware path for differential arm-electrode signals, analog conditioning,
+                microcontroller conversion, UART transfer, and Python visualization.
+              </p>
+              <dl class="project-meta">
+                <div>
+                  <dt>Role</dt>
+                  <dd>PCB, signal acquisition, and firmware contributor</dd>
+                </div>
+                <div>
+                  <dt>Context</dt>
+                  <dd>Junior Design Project</dd>
+                </div>
+              </dl>
+              <ul class="contribution-list">
+                <li>Designed and verified an Altium PCB for ECG signal acquisition.</li>
+                <li>Acquired differential heartbeat signals from arm electrodes.</li>
+                <li>Used a driven-leg common-mode feedback path for noise cancellation.</li>
+                <li>Conditioned the analog signal for PIC24 ADC conversion, UART transmission, and Python graphing.</li>
+              </ul>
+              <ul class="tech-list" aria-label="Electrocardiogram Acquisition System technologies">
+                <li>Altium Designer</li>
+                <li>PIC24FJ64</li>
+                <li>C</li>
+                <li>UART</li>
+                <li>Python</li>
+                <li>INA128P</li>
+                <li>AD708JN</li>
+                <li>PCB design</li>
+                <li>ECG</li>
+              </ul>
+              <a class="project-link" href="projects/electrocardiogram-acquisition-system.html">View Project</a>
+            </div>
+
+            <div class="project-media">
+              <figure class="diagram-card" aria-labelledby="ecg-title">
+                <!-- TODO: Replace placeholder labels with schematic references if approved project documentation is available. -->
+                <svg class="diagram-svg" viewBox="0 0 760 470" role="img" aria-labelledby="ecg-title ecg-desc">
+                  <title id="ecg-title">ECG acquisition signal-chain diagram</title>
+                  <desc id="ecg-desc">
+                    Arm electrodes feed an INA128P instrumentation amplifier, AD708 signal conditioning, PIC24 ADC, UART, and Python visualization.
+                    A driven-leg common-mode feedback path returns from the signal conditioning stage to the electrodes.
+                  </desc>
+                  <defs>
+                    <marker id="ecg-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                      <path d="M 0 0 L 10 5 L 0 10 z"></path>
+                    </marker>
+                  </defs>
+                  <rect class="node" x="238" y="28" width="284" height="52" rx="8"></rect>
+                  <text class="node-title" x="380" y="60" text-anchor="middle">Arm Electrodes</text>
+
+                  <rect class="node node-core" x="212" y="122" width="336" height="62" rx="8"></rect>
+                  <text class="node-title" x="380" y="151" text-anchor="middle">INA128P</text>
+                  <text class="node-subtitle" x="380" y="169" text-anchor="middle">Instrumentation Amplifier</text>
+
+                  <rect class="node" x="212" y="226" width="336" height="62" rx="8"></rect>
+                  <text class="node-title" x="380" y="255" text-anchor="middle">AD708 Signal Conditioning</text>
+                  <text class="node-subtitle" x="380" y="273" text-anchor="middle">Analog filtering / scaling</text>
+
+                  <rect class="node" x="238" y="330" width="284" height="52" rx="8"></rect>
+                  <text class="node-title" x="380" y="362" text-anchor="middle">PIC24 ADC</text>
+
+                  <rect class="node" x="238" y="418" width="284" height="42" rx="8"></rect>
+                  <text class="node-title" x="380" y="445" text-anchor="middle">Python Visualization</text>
+
+                  <line class="signal-line" x1="380" y1="86" x2="380" y2="114" marker-end="url(#ecg-arrow)"></line>
+                  <line class="signal-line" x1="380" y1="192" x2="380" y2="218" marker-end="url(#ecg-arrow)"></line>
+                  <line class="signal-line" x1="380" y1="296" x2="380" y2="322" marker-end="url(#ecg-arrow)"></line>
+                  <line class="signal-line" x1="380" y1="390" x2="380" y2="410" marker-end="url(#ecg-arrow)"></line>
+                  <text class="signal-label" x="408" y="405">UART</text>
+
+                  <path class="feedback-line" d="M 552 257 C 660 257, 660 54, 530 54" marker-end="url(#ecg-arrow)"></path>
+                  <text class="signal-label" x="650" y="155" text-anchor="middle">Driven-leg</text>
+                  <text class="signal-label" x="650" y="175" text-anchor="middle">feedback</text>
+                </svg>
+                <figcaption>Signal-chain diagram; no medical-grade performance or certification is implied.</figcaption>
+              </figure>
+
+              <div class="asset-placeholder" role="img" aria-label="ECG PCB image placeholder">
+                <!-- TODO: Replace with approved ECG PCB render, schematic crop, oscilloscope capture, or Python plot. -->
+                [ ECG PCB image ]
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Experience</p>
+          <h2 id="experience-heading">Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">May 2026 &ndash; Present</div>
+            <div>
+              <h3>Boston Scientific</h3>
+              <p class="role">R&amp;D Systems Engineering Intern</p>
+              <p>
+                Designed Bash/systemd Linux connectivity and diagnostic services at the capability level described above,
+                with focus on Ethernet discovery, routing, forwarding, NAT, firewall state, and service health.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Feb 2025 &ndash; Apr 2026</div>
+            <div>
+              <h3>Punch Through</h3>
+              <p class="role">Associate Embedded Software &amp; Electrical Engineer</p>
+              <p>
+                Supported professional embedded client work through Python/Pytest HIL and end-to-end firmware tests,
+                BLE attenuation testing, PC CPU-contention stress scenarios, Jenkins CI pipelines, KiCad PCB layout
+                for testing infrastructure, VectorCast unit testing, MISRA-C checks, and IAR Embedded Workbench.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Sept 2025 &ndash; May 2026</div>
+            <div>
+              <h3>STRIVE Medical</h3>
+              <p class="role">Lead Firmware Engineer</p>
+              <p>
+                Led SynDex firmware development and coordinated architecture across state management, encoder acquisition,
+                host-device communication, and cross-team electrical/software interfaces.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Stack</p>
+          <h2 id="skills-heading">Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <section class="skill-group" aria-labelledby="embedded-skills">
+            <h3 id="embedded-skills">Embedded / Firmware</h3>
+            <ul>
+              <li>C/C++</li>
+              <li>MCU firmware</li>
+              <li>state machines</li>
+              <li>UART</li>
+              <li>I2C</li>
+              <li>CAN</li>
+              <li>USB</li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="linux-skills">
+            <h3 id="linux-skills">Linux / Systems</h3>
+            <ul>
+              <li>Bash</li>
+              <li>systemd</li>
+              <li>iptables</li>
+              <li>routing</li>
+              <li>NAT</li>
+              <li>networking</li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="programming-skills">
+            <h3 id="programming-skills">Programming / Automation</h3>
+            <ul>
+              <li>Python</li>
+              <li>Pytest</li>
+              <li>PowerShell</li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="hardware-skills">
+            <h3 id="hardware-skills">Hardware / Electronics</h3>
+            <ul>
+              <li>KiCad</li>
+              <li>Altium Designer</li>
+              <li>PCB design</li>
+              <li>analog electronics</li>
+              <li>DMM</li>
+              <li>oscilloscope</li>
+              <li>power supply</li>
+              <li>arbitrary function generator</li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="verification-skills">
+            <h3 id="verification-skills">Verification / Tooling</h3>
+            <ul>
+              <li>Jenkins</li>
+              <li>VectorCast</li>
+              <li>MISRA-C</li>
+              <li>IAR Embedded Workbench</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Bitbucket</li>
+              <li>Jira</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="section about-contact-grid" id="about" aria-labelledby="about-heading">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2 id="about-heading">Engineer Profile</h2>
+          </div>
+          <p>
+            Richard Sartell is an Electrical &amp; Computer Engineering student at the University of Minnesota
+            graduating December 2026.
+          </p>
+          <p>
+            His experience spans embedded firmware, Linux systems, electronics, PCB development,
+            and automated firmware verification.
+          </p>
+        </div>
+
+        <aside class="contact-panel" id="contact" aria-labelledby="contact-heading">
+          <p class="eyebrow">Resume / Contact</p>
+          <h2 id="contact-heading">Recruiter Links</h2>
+          <p>
+            Resume is included in the repository for GitHub Pages hosting. External profile URLs are placeholders
+            until final links are added.
+          </p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="assets/resume/richard-sartell-resume.pdf">Download Resume</a>
+            <!-- TODO: Replace with Richard's preferred contact email. -->
+            <a class="button button-secondary placeholder-link" href="mailto:your.email@example.com">Email</a>
+            <!-- TODO: Replace # with Richard's GitHub profile URL. -->
+            <a class="button button-secondary placeholder-link" href="#">GitHub</a>
+            <!-- TODO: Replace # with Richard's LinkedIn profile URL. -->
+            <a class="button button-secondary placeholder-link" href="#">LinkedIn</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Richard Sartell</strong>
+        <span>Electrical &amp; Computer Engineer</span>
+      </div>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
