@@ -1,36 +1,9 @@
-const navLinks = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'));
-const sections = navLinks
-  .map((link) => document.querySelector(link.getAttribute('href')))
-  .filter(Boolean);
-
-if ('IntersectionObserver' in window && sections.length > 0) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return;
-        }
-
-        navLinks.forEach((link) => {
-          link.classList.toggle('is-active', link.getAttribute('href') === `#${entry.target.id}`);
-        });
-      });
-    },
-    {
-      rootMargin: '-35% 0px -55% 0px',
-      threshold: 0,
-    },
-  );
-
-  sections.forEach((section) => observer.observe(section));
-}
-
 const placeholderLinks = document.querySelectorAll('.placeholder-link');
 
 placeholderLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
-    showLinkNotice('Profile/contact link pending. Replace the TODO URL in index.html.');
+    showLinkNotice('Contact email pending. Replace the TODO email address in index.html.');
   });
 });
 

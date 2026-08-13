@@ -6,7 +6,7 @@
     <title>Richard Sartell | Electrical &amp; Computer Engineer</title>
     <meta
       name="description"
-      content="Engineering portfolio for Richard Sartell, focused on embedded firmware, Linux systems, electronics, PCB work, hardware/software interfaces, and verification."
+      content="My engineering portfolio, focused on embedded firmware, Linux systems, electronics, PCB work, hardware/software interfaces, and verification."
     >
     <meta property="og:title" content="Richard Sartell | Electrical &amp; Computer Engineer">
     <meta
@@ -22,53 +22,28 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" id="top">
-      <div class="nav-shell">
-        <a class="brand" href="#top" aria-label="Richard Sartell home">
-          <span class="brand-mark" aria-hidden="true">RS</span>
-          <span>Richard Sartell</span>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#about">About</a>
-          <a href="#contact">Resume</a>
-        </nav>
-      </div>
-    </header>
-
     <main id="main">
       <section class="hero section">
         <div class="hero-content">
           <p class="eyebrow">Electrical &amp; Computer Engineer</p>
-          <h1>Richard Sartell</h1>
-          <p class="hero-subtitle">Embedded Systems &middot; Linux &middot; Electronics &middot; Digital Hardware</p>
+          <h1>Richard "Thai" Sartell</h1>
           <p class="hero-copy">
-            Computer engineering portfolio focused on embedded firmware, Linux systems engineering,
-            hardware/software interfaces, electronics, PCB validation, and verification-driven debugging.
+            Computer engineer focused on embedded software, Linux systems engineering, HW/SW interfacing, and electrical/PCB validation.
           </p>
           <div class="hero-actions" aria-label="Portfolio actions">
             <a class="button button-primary" href="#projects">Projects</a>
             <a class="button button-secondary" href="assets/resume/richard-sartell-resume.pdf">Resume</a>
-            <!-- TODO: Replace # with Richard's GitHub profile URL. -->
-            <a class="button button-secondary placeholder-link" href="#" aria-label="GitHub profile URL pending">GitHub</a>
-            <!-- TODO: Replace # with Richard's LinkedIn profile URL. -->
-            <a class="button button-secondary placeholder-link" href="#" aria-label="LinkedIn profile URL pending">LinkedIn</a>
+            <a class="button button-secondary" href="https://github.com/thaisartell">GitHub</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/richardsartell/">LinkedIn</a>
           </div>
         </div>
 
         <aside class="hero-panel" aria-label="Engineering focus areas">
-          <div class="signal-strip" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <h2>Engineering Focus</h2>
+          <h2>Experience Domains</h2>
           <dl class="focus-list">
             <div>
               <dt>Firmware</dt>
-              <dd>MCU control, state machines, serial interfaces, host protocols</dd>
+              <dd>Bare-metal programming, Arduino firmware, serial protocols</dd>
             </div>
             <div>
               <dt>Systems</dt>
@@ -86,34 +61,9 @@
         </aside>
       </section>
 
-      <section class="section section-compact intro-band" aria-label="Portfolio summary">
-        <div class="summary-grid">
-          <div>
-            <span class="metric-label">Graduation</span>
-            <strong>December 2026</strong>
-            <span>University of Minnesota</span>
-          </div>
-          <div>
-            <span class="metric-label">Primary Domains</span>
-            <strong>Embedded + Linux</strong>
-            <span>Firmware, systems, electronics</span>
-          </div>
-          <div>
-            <span class="metric-label">Work Style</span>
-            <strong>Architecture to Debug</strong>
-            <span>Interfaces, verification, ownership</span>
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="projects" aria-labelledby="projects-heading">
         <div class="section-heading">
-          <p class="eyebrow">Selected Engineering Work</p>
           <h2 id="projects-heading">Projects</h2>
-          <p>
-            Each project emphasizes system boundaries, implementation decisions, hardware/software interfaces,
-            and verification work. Detailed case studies are scaffolded for expansion.
-          </p>
         </div>
 
         <div class="project-list">
@@ -123,39 +73,12 @@
                 <span>01</span>
                 <span>STRIVE Medical, University of Minnesota</span>
               </div>
-              <h3>SynDex</h3>
+              <h3><a href="projects/syndex.html">SynDex</a></h3>
               <p class="project-subtitle">Robotic Surgical Simulation System</p>
               <p>
-                Desktop robotic surgical training device using a Teensy 4.1 supervisory controller to coordinate
-                sensors, motor controllers, and a Unity host simulation.
+                Led firmware development for a desktop robotic surgical training device. Built state-machine foundation, I2C encoder handling, and
+                custom USB format connecting the Teensy controller to the Unity simulation.
               </p>
-              <dl class="project-meta">
-                <div>
-                  <dt>Role</dt>
-                  <dd>Lead Firmware Engineer</dd>
-                </div>
-                <div>
-                  <dt>Context</dt>
-                  <dd>STRIVE Medical, University of Minnesota</dd>
-                </div>
-              </dl>
-              <ul class="contribution-list">
-                <li>Led firmware development across multiple contributors.</li>
-                <li>Coordinated firmware architecture, priorities, and interfaces across electrical, software, and project leadership teams.</li>
-                <li>Implemented embedded state-machine infrastructure.</li>
-                <li>Developed infrastructure for I2C encoder acquisition and custom USB host-device communication.</li>
-              </ul>
-              <ul class="tech-list" aria-label="SynDex technologies">
-                <li>C/C++</li>
-                <li>Teensy 4.1</li>
-                <li>USB-CDC</li>
-                <li>I2C</li>
-                <li>CAN</li>
-                <li>ODrive</li>
-                <li>Unity</li>
-                <li>Git</li>
-              </ul>
-              <a class="project-link" href="projects/syndex.html">View Project</a>
             </div>
 
             <div class="project-media">
@@ -246,40 +169,13 @@
                 <span>02</span>
                 <span>Boston Scientific</span>
               </div>
-              <h3>Linux Internet Connection Sharing Service</h3>
+              <h3><a href="projects/linux-internet-connection-sharing.html">Linux Internet Connection Sharing Service</a></h3>
               <p class="project-subtitle">R&amp;D Systems Engineering Internship</p>
               <p>
-                Bash-based Linux service supporting runtime connectivity for a medical imaging platform through
-                automated network configuration, forwarding, NAT, firewall management, and diagnostics.
+                Bash/systemd connectivity service for a medical imaging platform. This stands out for its automated Ethernet discovery,
+                interface addressing, IP forwarding, DNS, NAT, and firewall configuration. Built a second service for diagnostics; capturing initial runtime info,
+                system state, network interface configuration, internet routes, and firewall rules.
               </p>
-              <dl class="project-meta">
-                <div>
-                  <dt>Role</dt>
-                  <dd>Systems engineering intern</dd>
-                </div>
-                <div>
-                  <dt>Confidentiality</dt>
-                  <dd>Sanitized capability-level description only</dd>
-                </div>
-              </dl>
-              <ul class="contribution-list">
-                <li>Designed and implemented a Bash/systemd Internet Connection Sharing service for Linux runtime connectivity.</li>
-                <li>Automated Ethernet discovery, IP configuration, IPv4 forwarding, DNS forwarding, NAT, and firewall rule management.</li>
-                <li>Developed a diagnostic service capturing interface state, service health, addressing, routing, forwarding, and firewall/NAT configuration.</li>
-                <li>Documented behavior at the service and diagnostic level without exposing protected product details.</li>
-              </ul>
-              <ul class="tech-list" aria-label="Linux Internet Connection Sharing technologies">
-                <li>Linux</li>
-                <li>Bash</li>
-                <li>systemd</li>
-                <li>iptables</li>
-                <li>IPv4</li>
-                <li>routing</li>
-                <li>NAT</li>
-                <li>DNS</li>
-                <li>Ethernet</li>
-              </ul>
-              <a class="project-link" href="projects/linux-internet-connection-sharing.html">View Project</a>
             </div>
 
             <div class="project-media">
@@ -334,37 +230,12 @@
                 <span>03</span>
                 <span>Senior Design Project</span>
               </div>
-              <h3>Smart Network-Attached Storage</h3>
+              <h3><a href="projects/smart-network-attached-storage.html">Smart Network-Attached Storage</a></h3>
               <p class="project-subtitle">Embedded control and hardware validation</p>
               <p>
-                Senior design work on firmware and electrical validation for an automated wireless file-backup system.
+                Developed Raspberry Pi Pico 2 W firmware that handled captive-portal requests for an automated wireless file-backup system.
+                Stress-tested system's over-voltage protection circuit and evaluated PCB updates for protection and connector integration.
               </p>
-              <dl class="project-meta">
-                <div>
-                  <dt>Role</dt>
-                  <dd>Firmware and electrical validation contributor</dd>
-                </div>
-                <div>
-                  <dt>Scope</dt>
-                  <dd>Confirmed details only; architecture placeholders remain editable</dd>
-                </div>
-              </dl>
-              <ul class="contribution-list">
-                <li>Developed Raspberry Pi Pico 2 W firmware processing captive-portal requests for user control.</li>
-                <li>Worked at the embedded web/control boundary for wireless backup behavior.</li>
-                <li>Validated an over-voltage protection circuit through structured electrical stress testing.</li>
-                <li>Evaluated PCB design updates for over-voltage protection and connector integration.</li>
-              </ul>
-              <ul class="tech-list" aria-label="Smart Network-Attached Storage technologies">
-                <li>Raspberry Pi Pico 2 W</li>
-                <li>C/C++</li>
-                <li>embedded networking</li>
-                <li>Wi-Fi</li>
-                <li>HTTP</li>
-                <li>GPIO</li>
-                <li>PCB validation</li>
-              </ul>
-              <a class="project-link" href="projects/smart-network-attached-storage.html">View Project</a>
             </div>
 
             <div class="project-media">
@@ -420,40 +291,12 @@
                 <span>04</span>
                 <span>Junior Design Project</span>
               </div>
-              <h3>Electrocardiogram Acquisition System</h3>
+              <h3><a href="projects/electrocardiogram-acquisition-system.html">Electrocardiogram Acquisition System</a></h3>
               <p class="project-subtitle">Analog front end, PCB, MCU acquisition, UART visualization</p>
               <p>
-                ECG signal acquisition PCB and firmware path for differential arm-electrode signals, analog conditioning,
-                microcontroller conversion, UART transfer, and Python visualization.
+                Designed and verified an Altium PCB that acquired differential ECG signals from arm electrodes and used driven-leg feedback
+                to reduce common-mode noise. Conditioned signal for PIC24 ADC conversion, UART transmission, and Python visualization.
               </p>
-              <dl class="project-meta">
-                <div>
-                  <dt>Role</dt>
-                  <dd>PCB, signal acquisition, and firmware contributor</dd>
-                </div>
-                <div>
-                  <dt>Context</dt>
-                  <dd>Junior Design Project</dd>
-                </div>
-              </dl>
-              <ul class="contribution-list">
-                <li>Designed and verified an Altium PCB for ECG signal acquisition.</li>
-                <li>Acquired differential heartbeat signals from arm electrodes.</li>
-                <li>Used a driven-leg common-mode feedback path for noise cancellation.</li>
-                <li>Conditioned the analog signal for PIC24 ADC conversion, UART transmission, and Python graphing.</li>
-              </ul>
-              <ul class="tech-list" aria-label="Electrocardiogram Acquisition System technologies">
-                <li>Altium Designer</li>
-                <li>PIC24FJ64</li>
-                <li>C</li>
-                <li>UART</li>
-                <li>Python</li>
-                <li>INA128P</li>
-                <li>AD708JN</li>
-                <li>PCB design</li>
-                <li>ECG</li>
-              </ul>
-              <a class="project-link" href="projects/electrocardiogram-acquisition-system.html">View Project</a>
             </div>
 
             <div class="project-media">
@@ -509,55 +352,8 @@
         </div>
       </section>
 
-      <section class="section" id="experience" aria-labelledby="experience-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Engineering Experience</p>
-          <h2 id="experience-heading">Experience</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">May 2026 &ndash; Present</div>
-            <div>
-              <h3>Boston Scientific</h3>
-              <p class="role">R&amp;D Systems Engineering Intern</p>
-              <p>
-                Designed Bash/systemd Linux connectivity and diagnostic services at the capability level described above,
-                with focus on Ethernet discovery, routing, forwarding, NAT, firewall state, and service health.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">Feb 2025 &ndash; Apr 2026</div>
-            <div>
-              <h3>Punch Through</h3>
-              <p class="role">Associate Embedded Software &amp; Electrical Engineer</p>
-              <p>
-                Supported professional embedded client work through Python/Pytest HIL and end-to-end firmware tests,
-                BLE attenuation testing, PC CPU-contention stress scenarios, Jenkins CI pipelines, KiCad PCB layout
-                for testing infrastructure, VectorCast unit testing, MISRA-C checks, and IAR Embedded Workbench.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">Sept 2025 &ndash; May 2026</div>
-            <div>
-              <h3>STRIVE Medical</h3>
-              <p class="role">Lead Firmware Engineer</p>
-              <p>
-                Led SynDex firmware development and coordinated architecture across state management, encoder acquisition,
-                host-device communication, and cross-team electrical/software interfaces.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
       <section class="section" id="skills" aria-labelledby="skills-heading">
         <div class="section-heading">
-          <p class="eyebrow">Technical Stack</p>
           <h2 id="skills-heading">Skills</h2>
         </div>
 
@@ -565,62 +361,28 @@
           <section class="skill-group" aria-labelledby="embedded-skills">
             <h3 id="embedded-skills">Embedded / Firmware</h3>
             <ul>
-              <li>C/C++</li>
-              <li>MCU firmware</li>
-              <li>state machines</li>
-              <li>UART</li>
-              <li>I2C</li>
-              <li>CAN</li>
-              <li>USB</li>
-            </ul>
-          </section>
-
-          <section class="skill-group" aria-labelledby="linux-skills">
-            <h3 id="linux-skills">Linux / Systems</h3>
-            <ul>
-              <li>Bash</li>
-              <li>systemd</li>
-              <li>iptables</li>
-              <li>routing</li>
-              <li>NAT</li>
-              <li>networking</li>
-            </ul>
-          </section>
-
-          <section class="skill-group" aria-labelledby="programming-skills">
-            <h3 id="programming-skills">Programming / Automation</h3>
-            <ul>
-              <li>Python</li>
-              <li>Pytest</li>
-              <li>PowerShell</li>
+              <li>C/C++, Python, Linux Bash</li>
+              <li>Embedded Communication Protocols: UART, I2C, USB, CAN</li>
+              <li>Pytest + PowerShell</li>
             </ul>
           </section>
 
           <section class="skill-group" aria-labelledby="hardware-skills">
             <h3 id="hardware-skills">Hardware / Electronics</h3>
             <ul>
-              <li>KiCad</li>
-              <li>Altium Designer</li>
-              <li>PCB design</li>
-              <li>analog electronics</li>
-              <li>DMM</li>
-              <li>oscilloscope</li>
-              <li>power supply</li>
-              <li>arbitrary function generator</li>
+              <li>PCB Schematic + Layout Design: KiCad, Altium Designer</li>
+              <li>Lab Tools: DMMs, oscilloscopes, power supplies, function generators</li>
             </ul>
           </section>
 
           <section class="skill-group" aria-labelledby="verification-skills">
-            <h3 id="verification-skills">Verification / Tooling</h3>
+            <h3 id="verification-skills">Verification Tools</h3>
             <ul>
-              <li>Jenkins</li>
-              <li>VectorCast</li>
-              <li>MISRA-C</li>
-              <li>IAR Embedded Workbench</li>
-              <li>Git</li>
-              <li>GitHub</li>
-              <li>Bitbucket</li>
-              <li>Jira</li>
+              <li>CI/CD: Jenkins, Azure Pipelines</li>
+              <li>Unit Testing: VectorCast</li>
+              <li>IAR Embedded Workbench -> MISRA-C Standards</li>
+              <li>Version Control: Git/Github, Bitbucket</li>
+              <li>Workflow: Jira</li>
             </ul>
           </section>
         </div>
@@ -629,34 +391,29 @@
       <section class="section about-contact-grid" id="about" aria-labelledby="about-heading">
         <div>
           <div class="section-heading">
-            <p class="eyebrow">About</p>
-            <h2 id="about-heading">Engineer Profile</h2>
+            <h2 id="about-heading">TL;DR</h2>
           </div>
           <p>
-            Richard Sartell is an Electrical &amp; Computer Engineering student at the University of Minnesota
-            graduating December 2026.
-          </p>
-          <p>
-            His experience spans embedded firmware, Linux systems, electronics, PCB development,
+            My experience spans embedded firmware, Linux systems, electronics, PCB development,
             and automated firmware verification.
           </p>
+          <p>Favorite quotes: </p>
+          <p>"The man that loves walking will walk further than the man that loves the destination" - Sal Di Stefano</p>
+          <p>"History repeats itself because no one was listening the first time." - Benjamin Franklin</p>
         </div>
 
         <aside class="contact-panel" id="contact" aria-labelledby="contact-heading">
-          <p class="eyebrow">Resume / Contact</p>
-          <h2 id="contact-heading">Recruiter Links</h2>
+          <h2 id="contact-heading">Resume / Contact</h2>
           <p>
-            Resume is included in the repository for GitHub Pages hosting. External profile URLs are placeholders
-            until final links are added.
+            I have included my resume in the repository for GitHub Pages hosting. My GitHub and LinkedIn links are live;
+            the email address is still a placeholder until I choose a public contact address.
           </p>
           <div class="contact-actions">
             <a class="button button-primary" href="assets/resume/richard-sartell-resume.pdf">Download Resume</a>
-            <!-- TODO: Replace with Richard's preferred contact email. -->
-            <a class="button button-secondary placeholder-link" href="mailto:your.email@example.com">Email</a>
-            <!-- TODO: Replace # with Richard's GitHub profile URL. -->
-            <a class="button button-secondary placeholder-link" href="#">GitHub</a>
-            <!-- TODO: Replace # with Richard's LinkedIn profile URL. -->
-            <a class="button button-secondary placeholder-link" href="#">LinkedIn</a>
+            <!-- TODO: Replace with my preferred public contact email. -->
+            <a class="button button-secondary placeholder-link" href="mailto:thaisartell@gmail.com">Email</a>
+            <a class="button button-secondary" href="https://github.com/thaisartell">GitHub</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/richardsartell/">LinkedIn</a>
           </div>
         </aside>
       </section>
@@ -667,7 +424,6 @@
         <strong>Richard Sartell</strong>
         <span>Electrical &amp; Computer Engineer</span>
       </div>
-      <a href="#top">Back to top</a>
     </footer>
 
     <script src="js/main.js"></script>

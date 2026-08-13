@@ -1,6 +1,6 @@
 # Richard Sartell Engineering Portfolio
 
-Static portfolio website for Richard "Thai" Sartell, designed for GitHub Pages and focused on embedded systems, Linux systems engineering, electronics, PCB work, firmware verification, and hardware/software interfaces.
+Static portfolio website for my engineering work, designed for GitHub Pages and focused on embedded systems, Linux systems engineering, electronics, PCB work, firmware verification, and hardware/software interfaces.
 
 ## Preview Locally
 
@@ -37,15 +37,13 @@ Place public portfolio assets in:
 
 Use approved project photos, architecture diagrams, PCB screenshots, oscilloscope captures, test plots, or short videos/GIFs. Do not add proprietary product screenshots, internal network diagrams, source code, IP addresses, customer information, or confidential client artifacts.
 
-## Replace Placeholder URLs
+## Replace Placeholder Contact Info
 
 In `index.html`, replace:
 
-- GitHub `href="#"` links
-- LinkedIn `href="#"` links
 - `mailto:your.email@example.com`
 
-The current JavaScript prevents placeholder links from navigating and shows a short notice.
+My GitHub and LinkedIn links are already wired in. The current JavaScript prevents the placeholder email link from navigating and shows a short notice.
 
 ## Enable GitHub Pages
 
