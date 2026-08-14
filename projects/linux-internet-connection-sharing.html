@@ -11,14 +11,10 @@
   <body class="case-page">
     <main>
       <section class="case-header">
+        <a class="back-home-link" href="../index.html">&larr; Go back to home page</a>
         <p class="eyebrow">Boston Scientific</p>
         <h1>Linux Internet Connection Sharing Service</h1>
         <p class="hero-subtitle">R&amp;D Systems Engineering Internship</p>
-        <p>
-          I am using this sanitized case-study scaffold to describe Bash-based Linux networking automation and diagnostics. Proprietary product
-          architecture, topology, configuration values, screenshots, and internal interfaces are intentionally omitted.
-        </p>
-        <a class="project-link" href="../index.html#project-linux-ics">Back to project summary</a>
       </section>
 
       <div class="case-layout">
@@ -28,6 +24,10 @@
             <p>
               I designed and implemented a Linux Internet Connection Sharing service supporting runtime connectivity
               for a medical imaging platform at a generic capability level.
+            </p>
+            <p>
+              Supplementary to this, I also created a diagnostic service creating log outputs capturing ICS runtime behavior,
+              network interface state, ICS systemd service status, IP addressing, routing, system IPv4 forwarding configuration, and network firewall configuration.
             </p>
           </section>
           <section>
@@ -40,28 +40,28 @@
           </section>
           <section>
             <h2>System Architecture</h2>
-            <p>
-              I am limiting the public description to External Network, Linux System, and Restricted Network, with the Linux
-              service handling discovery, configuration, forwarding, NAT, firewall, and diagnostics.
-            </p>
+            <figure class="case-figure case-figure-wide">
+              <img
+                src="../assets/diagrams/icsPacketFlow.png"
+                width="1311"
+                height="852"
+                loading="lazy"
+                decoding="async"
+                alt="Packet flow through the Linux Internet Connection Sharing service, showing outbound LAN traffic and returning WAN traffic passing through connection tracking, prerouting, forwarding, and postrouting NAT"
+              >
+              <figcaption>Outbound and return packet flow through the Linux iptables/netfilter framework.</figcaption>
+            </figure>
           </section>
           <section>
             <h2>Technical Implementation</h2>
             <p>
-              My technical work included automation of Ethernet interface discovery, IP configuration, IPv4 forwarding,
-              DNS forwarding, NAT, firewall rule management, iptables, and systemd service behavior.
+              This stands out for its automated Ethernet discovery, interface addressing, IP forwarding, DNS, NAT, and firewall configuration.
+              Built a second service for diagnostics; capturing initial runtime info, system state, network interface configuration, internet routes, and firewall rules.
             </p>
           </section>
           <section>
             <h2>Engineering Decisions</h2>
             <p class="case-placeholder">TODO: Add non-confidential discussion of reliability, maintainability, or service boundaries.</p>
-          </section>
-          <section>
-            <h2>Verification / Debugging</h2>
-            <p>
-              I developed an automated Linux diagnostic service capturing network interface state, systemd service
-              health, IP addressing, routing, IPv4 forwarding configuration, and firewall/NAT configuration.
-            </p>
           </section>
           <section>
             <h2>Results</h2>

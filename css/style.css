@@ -185,10 +185,6 @@ h4 {
   color: #000000;
 }
 
-.placeholder-link {
-  cursor: help;
-}
-
 .hero-panel {
   max-width: 760px;
   margin-top: 1.25rem;
@@ -270,14 +266,6 @@ h4 {
 
 .project-copy h3 a:visited {
   color: var(--heading);
-}
-
-.project-link {
-  font-weight: normal;
-}
-
-.project-link::after {
-  content: " >";
 }
 
 .project-media {
@@ -494,6 +482,13 @@ marker path {
   padding-bottom: 1rem;
 }
 
+.back-home-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 .case-header p {
   max-width: 720px;
 }
@@ -510,6 +505,40 @@ marker path {
 
 .case-outline h2 {
   font-size: 1.05rem;
+}
+
+.case-figure {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0.8rem 0 0;
+}
+
+.case-figure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.case-figure-wide {
+  width: 100%;
+}
+
+.case-figure-wide img {
+  width: 100%;
+}
+
+.case-figure-narrow {
+  max-width: 233px;
+}
+
+.case-figure figcaption {
+  margin-top: 0.3rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
 }
 
 .case-placeholder {

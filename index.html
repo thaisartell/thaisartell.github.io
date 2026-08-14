@@ -31,11 +31,15 @@
             Computer engineer focused on embedded software, Linux systems engineering, HW/SW interfacing, and electrical/PCB validation.
           </p>
           <div class="hero-actions" aria-label="Portfolio actions">
-            <a class="button button-primary" href="#projects">Projects</a>
             <a class="button button-secondary" href="assets/resume/richard-sartell-resume.pdf">Resume</a>
             <a class="button button-secondary" href="https://github.com/thaisartell">GitHub</a>
             <a class="button button-secondary" href="https://www.linkedin.com/in/richardsartell/">LinkedIn</a>
           </div>
+          <dl class="project-subtitle">
+          <dt>"Self-confidence is the first requisite to great undertakings." - Dr. Samuel Johnson</dt>
+          <dt>"The man that loves walking will walk further than the man that loves the destination." - Sal Di Stefano</dt>
+          <dt>"A wet man does not fear rain." - Russian Proverb</dt>
+          </dl>
         </div>
 
         <aside class="hero-panel" aria-label="Engineering focus areas">
@@ -76,8 +80,7 @@
               <h3><a href="projects/syndex.html">SynDex</a></h3>
               <p class="project-subtitle">Robotic Surgical Simulation System</p>
               <p>
-                Led firmware development for a desktop robotic surgical training device. Built state-machine foundation, I2C encoder handling, and
-                custom USB format connecting the Teensy controller to the Unity simulation.
+                Led firmware development for a desktop-connected robotic surgical training arm.
               </p>
             </div>
 
@@ -172,9 +175,7 @@
               <h3><a href="projects/linux-internet-connection-sharing.html">Linux Internet Connection Sharing Service</a></h3>
               <p class="project-subtitle">R&amp;D Systems Engineering Internship</p>
               <p>
-                Bash/systemd connectivity service for a medical imaging platform. This stands out for its automated Ethernet discovery,
-                interface addressing, IP forwarding, DNS, NAT, and firewall configuration. Built a second service for diagnostics; capturing initial runtime info,
-                system state, network interface configuration, internet routes, and firewall rules.
+                Bash/systemd connectivity service for a medical imaging platform.
               </p>
             </div>
 
@@ -233,8 +234,7 @@
               <h3><a href="projects/smart-network-attached-storage.html">Smart Network-Attached Storage</a></h3>
               <p class="project-subtitle">Embedded control and hardware validation</p>
               <p>
-                Developed Raspberry Pi Pico 2 W firmware that handled captive-portal requests for an automated wireless file-backup system.
-                Stress-tested system's over-voltage protection circuit and evaluated PCB updates for protection and connector integration.
+                Created Raspberry Pi Pico 2 W captive portal, handling web requests for automated wireless file-backup system. Also performed OVP circuit stress testing and PCB review.
               </p>
             </div>
 
@@ -277,11 +277,6 @@
                   <span>Electrical validation</span>
                 </div>
               </div>
-
-              <div class="asset-placeholder" role="img" aria-label="Smart NAS prototype image placeholder">
-                <!-- TODO: Replace with a Smart NAS prototype photo or approved PCB image. -->
-                [ Smart NAS prototype image ]
-              </div>
             </div>
           </article>
 
@@ -294,14 +289,13 @@
               <h3><a href="projects/electrocardiogram-acquisition-system.html">Electrocardiogram Acquisition System</a></h3>
               <p class="project-subtitle">Analog front end, PCB, MCU acquisition, UART visualization</p>
               <p>
-                Designed and verified an Altium PCB that acquired differential ECG signals from arm electrodes and used driven-leg feedback
-                to reduce common-mode noise. Conditioned signal for PIC24 ADC conversion, UART transmission, and Python visualization.
+                Designed + verified Altium PCB.
+                Performed E2E and stage-by-stage testing of analog heartbeat input vs. digital graph output.
               </p>
             </div>
 
             <div class="project-media">
               <figure class="diagram-card" aria-labelledby="ecg-title">
-                <!-- TODO: Replace placeholder labels with schematic references if approved project documentation is available. -->
                 <svg class="diagram-svg" viewBox="0 0 760 470" role="img" aria-labelledby="ecg-title ecg-desc">
                   <title id="ecg-title">ECG acquisition signal-chain diagram</title>
                   <desc id="ecg-desc">
@@ -342,11 +336,6 @@
                 </svg>
                 <figcaption>Signal-chain diagram; no medical-grade performance or certification is implied.</figcaption>
               </figure>
-
-              <div class="asset-placeholder" role="img" aria-label="ECG PCB image placeholder">
-                <!-- TODO: Replace with approved ECG PCB render, schematic crop, oscilloscope capture, or Python plot. -->
-                [ ECG PCB image ]
-              </div>
             </div>
           </article>
         </div>
@@ -397,21 +386,16 @@
             My experience spans embedded firmware, Linux systems, electronics, PCB development,
             and automated firmware verification.
           </p>
-          <p>Favorite quotes: </p>
-          <p>"The man that loves walking will walk further than the man that loves the destination" - Sal Di Stefano</p>
-          <p>"History repeats itself because no one was listening the first time." - Benjamin Franklin</p>
         </div>
 
         <aside class="contact-panel" id="contact" aria-labelledby="contact-heading">
           <h2 id="contact-heading">Resume / Contact</h2>
           <p>
-            I have included my resume in the repository for GitHub Pages hosting. My GitHub and LinkedIn links are live;
-            the email address is still a placeholder until I choose a public contact address.
+            Download my resume or contact me by email, GitHub, or LinkedIn.
           </p>
           <div class="contact-actions">
             <a class="button button-primary" href="assets/resume/richard-sartell-resume.pdf">Download Resume</a>
-            <!-- TODO: Replace with my preferred public contact email. -->
-            <a class="button button-secondary placeholder-link" href="mailto:thaisartell@gmail.com">Email</a>
+            <a class="button button-secondary" href="mailto:thaisartell@gmail.com">Email</a>
             <a class="button button-secondary" href="https://github.com/thaisartell">GitHub</a>
             <a class="button button-secondary" href="https://www.linkedin.com/in/richardsartell/">LinkedIn</a>
           </div>
@@ -425,7 +409,5 @@
         <span>Electrical &amp; Computer Engineer</span>
       </div>
     </footer>
-
-    <script src="js/main.js"></script>
   </body>
 </html>

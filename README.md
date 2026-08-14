@@ -37,13 +37,9 @@ Place public portfolio assets in:
 
 Use approved project photos, architecture diagrams, PCB screenshots, oscilloscope captures, test plots, or short videos/GIFs. Do not add proprietary product screenshots, internal network diagrams, source code, IP addresses, customer information, or confidential client artifacts.
 
-## Replace Placeholder Contact Info
+## Contact Links
 
-In `index.html`, replace:
-
-- `mailto:your.email@example.com`
-
-My GitHub and LinkedIn links are already wired in. The current JavaScript prevents the placeholder email link from navigating and shows a short notice.
+My email, GitHub, and LinkedIn links are configured in `index.html`.
 
 ## Enable GitHub Pages
 
