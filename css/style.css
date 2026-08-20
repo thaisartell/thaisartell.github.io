@@ -9,7 +9,7 @@
   --heading-surface: #eee9df;
   --link: #111111;
   --visited: #2e2b28;
-  --max-width: 860px;
+  --max-width: 1180px;
 }
 
 * {
@@ -183,6 +183,28 @@ h4 {
 .button:hover {
   background: transparent;
   color: #000000;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text);
+  line-height: 1;
+  text-decoration: none;
+}
+
+.social-link:visited {
+  color: var(--text);
+}
+
+.social-link:hover {
+  color: #000000;
+}
+
+.social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
 }
 
 .hero-panel {
@@ -489,6 +511,11 @@ marker path {
   font-weight: bold;
 }
 
+.report-link {
+  display: inline-block;
+  font-weight: bold;
+}
+
 .case-header p {
   max-width: 720px;
 }
@@ -505,6 +532,11 @@ marker path {
 
 .case-outline h2 {
   font-size: 1.05rem;
+}
+
+.case-outline h3 {
+  margin-top: 1.25rem;
+  font-size: 1rem;
 }
 
 .case-figure {
@@ -532,6 +564,38 @@ marker path {
 
 .case-figure-narrow {
   max-width: 233px;
+}
+
+.case-figure-phone {
+  width: 320px;
+  max-width: 100%;
+}
+
+.case-figure-assembly {
+  width: 360px;
+}
+
+.case-figure-crop {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.case-figure-crop img {
+  position: absolute;
+  max-width: none;
+  border: 0;
+}
+
+.case-figure-assembly .case-figure-crop {
+  aspect-ratio: 235 / 167;
+}
+
+.case-figure-assembly .case-figure-crop img {
+  top: -39%;
+  left: -77%;
+  width: 253%;
 }
 
 .case-figure figcaption {
