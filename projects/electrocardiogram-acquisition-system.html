@@ -66,27 +66,61 @@
               I used an INA128P instrumentation amplifier and two AD708JN operational amplifiers in the analog front end
               to condition the signal for digital conversion.
             </p>
-            <h3>Analog front-end schematic</h3>
-            <figure class="case-figure case-figure-wide">
-              <img
-                src="../assets/diagrams/ecgFrontendSchematic.png"
-                width="977"
-                height="773"
-                alt="Altium schematic of the ECG analog front end, including the INA128P instrumentation amplifier, second-stage amplifier, and leg-feedback loop"
-              >
-              <figcaption>Altium schematic of the implemented analog front end.</figcaption>
-            </figure>
-
-            <h3>Digital schematic</h3>
-            <figure class="case-figure case-figure-wide">
-              <img
-                src="../assets/diagrams/ecgDigitalSchematic.png"
-                width="1187"
-                height="703"
-                alt="Altium digital schematic showing the PIC24 microcontroller, power decoupling, programming connector, ADC input, and UART connections"
-              >
-              <figcaption>Altium schematic of the PIC24 acquisition and UART section.</figcaption>
-            </figure>
+            <div class="case-figure-grid">
+              <div>
+                <h3>Analog front-end schematic</h3>
+                <figure class="case-figure case-figure-wide">
+                  <img
+                    src="../assets/diagrams/ecgFrontendSchematic.png"
+                    width="977"
+                    height="773"
+                    alt="Altium schematic of the ECG analog front end, including the INA128P instrumentation amplifier, second-stage amplifier, and leg-feedback loop"
+                  >
+                  <figcaption>Altium schematic of the implemented analog front end.</figcaption>
+                </figure>
+              </div>
+              <div>
+                <h3>Digital schematic</h3>
+                <figure class="case-figure case-figure-wide">
+                  <img
+                    src="../assets/diagrams/ecgDigitalSchematic.png"
+                    width="1187"
+                    height="703"
+                    alt="Altium digital schematic showing the PIC24 microcontroller, power decoupling, programming connector, ADC input, and UART connections"
+                  >
+                  <figcaption>Altium schematic of the PIC24 acquisition and UART section.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>PCB Layout and Assembly Render</h2>
+            <p>
+              The Altium layout shows the board's component placement and copper routing. The 3D render shows
+              how the assembled PCB is designed to look.
+            </p>
+            <div class="case-figure-grid">
+              <figure class="case-figure case-figure-wide">
+                <img
+                  src="../assets/diagrams/ecgPcbLayerView.png"
+                  width="1352"
+                  height="937"
+                  loading="lazy"
+                  alt="Altium ECG PCB layout showing component placement and routed copper traces"
+                >
+                <figcaption>PCB layout and trace routing in Altium.</figcaption>
+              </figure>
+              <figure class="case-figure case-figure-wide">
+                <img
+                  src="../assets/diagrams/ecgPcbRender.png"
+                  width="1289"
+                  height="986"
+                  loading="lazy"
+                  alt="Altium 3D render of the assembled ECG PCB with its components mounted on the board"
+                >
+                <figcaption>Altium 3D render of the assembled ECG board.</figcaption>
+              </figure>
+            </div>
           </section>
         </article>
 
