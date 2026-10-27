@@ -1,4 +1,4 @@
-// Cookbook: search + tag filters narrow the list; "Draw a dish" picks at
+// Cookbook: search + tag filters narrow the list; "Draw random dish" picks at
 // random from whatever currently matches. The URL hash holds the shown dish.
 (function () {
   var recipes = window.RECIPES;
@@ -28,7 +28,7 @@
 
   recipes.forEach(function (r) {
     r._text = fold([
-      r.name, r.aka, r.summary, r.principle, r.tags.join(" "),
+      r.name, r.aka, r.principle, r.tags.join(" "),
       (r.ingredients || []).map(function (g) { return g.items.join(" "); }).join(" "),
       (r.variations || []).map(function (v) { return v.name + " " + v.note; }).join(" "),
     ].join(" "));
@@ -76,7 +76,7 @@
         '<button type="button" data-slug="' + r.slug + '">' +
         '<span class="row-name">' + esc(r.name) + "</span>" +
         '<span class="row-kind">' + esc(r.kind) + "</span>" +
-        '<span class="row-summary">' + esc(r.summary) + "</span>" +
+        '<span class="row-principle">' + esc(r.principle) + "</span>" +
         "</button></li>";
     }).join("");
   }
@@ -105,7 +105,6 @@
       '<p class="card-label smallcaps">' + (r.kind === "foundation" ? "A foundation" : "A dish") + "</p>" +
       "<h2>" + esc(r.name) + "</h2>" +
       (r.aka ? '<p class="aka">' + esc(r.aka) + "</p>" : "") +
-      '<p class="summary">' + esc(r.summary) + "</p>" +
       '<div class="chip-row">' + r.tags.map(function (t) { return '<span class="chip">' + esc(t) + "</span>"; }).join("") + "</div>" +
       '<div class="recipe-body">' +
         (r.principle ? '<p class="principle">' + esc(r.principle) + "</p>" : "") +

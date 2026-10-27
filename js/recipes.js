@@ -1,6 +1,7 @@
 /*
  * The cookbook. One entry per dish or technique.
  *
+ *   principle:   one or two plain sentences on why the dish works
  *   kind:        "foundation" — a base method with many dialects
  *                "dish"       — a specific thing I make
  *   tags:        free-form, but put each tag in TAG_GROUPS below so it shows
@@ -25,8 +26,7 @@ window.RECIPES = [
     name: "The Stew",
     aka: "seared meat, onions, garlic, bone broth",
     kind: "foundation",
-    summary: "Sear a meat hard, deglaze with onion and garlic, simmer in beef bone broth. Everything else is a dialect.",
-    principle: "The flavor is in the browning. Onions release water that lifts the fond off the pot, and the bone broth carries it into everything.",
+    principle: "Onions release fond from browned meat. The broth carries this flavor into the end-product.",
     tags: ["stew", "foundation", "high-protein", "meal prep", "chinese-spiced", "weekend project"],
     ingredients: [
       { group: "Any meat", items: ["chicken", "ground beef", "cubed stew-cut steak", "steak round", "pork shoulder", "pork loin", "pork heart"] },
@@ -52,8 +52,7 @@ window.RECIPES = [
     name: "Beef & Pork Heart Stew",
     aka: "the eastern stew",
     kind: "dish",
-    summary: "The stew in its eastern dialect: warm spices bloomed first, then beef and pork heart, finished with bok choy.",
-    principle: "Spices bloomed in fat before the meat carry through the whole pot. Greens go in last so they stay green.",
+    principle: "Whole spices bloomed in oil flavor the fat before the meat goes in. Bok choy is added last so it stays crisp.",
     tags: ["stew", "chinese-spiced", "high-protein", "meal prep", "weekend project"],
     ingredients: [
       { group: "Aromatics, first", items: ["ginger", "Sichuan peppercorn", "cinnamon", "star anise"] },
@@ -75,8 +74,7 @@ window.RECIPES = [
     name: "Fermented Pork Sausage",
     aka: "Thai sour pork & rice sausage",
     kind: "dish",
-    summary: "Ground pork, cooked rice and a lot of garlic, wrapped in rice paper, left to sour for a few days, then air-fried.",
-    principle: "The cooked rice feeds the fermentation, which turns the pork pleasantly sour. Air-frying crisps the rice paper into a shell.",
+    principle: "Cooked rice feeds fermentation, turning the pork sour after 2-4 days in dry air. The rice paper provides a crunchy exterior.",
     tags: ["thai", "sausage", "weekend project"],
     ingredients: [
       { group: "Filling", items: ["ground pork", "cooked rice", "lots of garlic", "salt", "thread (glass) noodles, optional"] },
@@ -96,8 +94,7 @@ window.RECIPES = [
     name: "Tom Yum",
     aka: "hot and sour soup",
     kind: "dish",
-    summary: "Hot, sour, salty, aromatic broth. With noodles for a meal, without for a lighter bowl.",
-    principle: "Bruise the aromatics so they give everything to the broth, and add lime at the end so it stays bright.",
+    principle: "Bruised lemongrass, galangal and lime leaves release their oils into the stock. Lime juice goes in off the heat, since boiling dulls its acidity.",
     tags: ["thai", "soup", "noodles", "weeknight", "cutting meal"],
     ingredients: [
       { group: "Broth", items: ["stock", "lemongrass", "galangal", "makrut lime leaves", "Thai chilies"] },
@@ -119,8 +116,7 @@ window.RECIPES = [
     name: "Thai Salad",
     aka: "crispy chicken or steak",
     kind: "dish",
-    summary: "Something hot and crisp or seared, tossed with a sharp lime and fish sauce dressing and fresh herbs.",
-    principle: "Hot, rich protein against a cold, sour dressing. Dress at the last second so the crispy parts stay crisp.",
+    principle: "The dressing balances sour, salty, sweet and hot against warm protein. Dressing just before serving keeps fried chicken crisp.",
     tags: ["thai", "salad", "cutting meal", "high-protein", "date night"],
     ingredients: [
       { group: "Protein, one of", items: ["crispy chicken", "seared beef or steak, sliced"] },
@@ -138,8 +134,7 @@ window.RECIPES = [
     name: "Thai Omelette",
     aka: "kai jeow",
     kind: "dish",
-    summary: "Eggs beaten with fish sauce, poured into very hot oil so they puff up with crisp, lacy edges. Over rice.",
-    principle: "More oil and more heat than feels right. The eggs should hiss and puff the moment they hit the pan.",
+    principle: "Very hot oil sets the egg's surface instantly, trapping steam that puffs it up. The thin edges fry into a crisp lace.",
     tags: ["thai", "eggs", "quick", "weeknight"],
     ingredients: [
       { group: "Eggs", items: ["eggs", "fish sauce"] },
@@ -158,8 +153,7 @@ window.RECIPES = [
     name: "Pad Kra Pao",
     aka: "holy basil stir-fry",
     kind: "dish",
-    summary: "Minced meat stir-fried hard with garlic, chili and holy basil. Rice and a fried egg.",
-    principle: "Pound the garlic and chili together, cook fast and hot, and add the basil at the very end.",
+    principle: "Pounding garlic and chili releases more of their oils than chopping. Holy basil goes in off the heat, since prolonged cooking dulls its aroma.",
     tags: ["thai", "stir-fry", "quick", "high-protein", "weeknight"],
     ingredients: [
       { group: "Base", items: ["minced pork or chicken", "garlic", "Thai chilies"] },
@@ -178,8 +172,7 @@ window.RECIPES = [
     name: "Cabbage & Cauliflower Stir-Fry",
     aka: "the side dish",
     kind: "dish",
-    summary: "Roughly cut cabbage and cauliflower, stir-fried with garlic and fish sauce. Goes next to anything.",
-    principle: "High heat and a little char; don't cut it too small and don't let it steam.",
+    principle: "High heat chars the cut surfaces before the vegetables release their water. Small pieces or a crowded pan steam instead of char.",
     tags: ["thai", "side", "stir-fry", "quick", "cutting meal"],
     ingredients: [
       { group: "Vegetables", items: ["cabbage, roughly cut", "cauliflower, roughly cut"] },
@@ -196,8 +189,7 @@ window.RECIPES = [
     name: "Quick Pickles",
     aka: "cucumber, jalapeño, carrot & daikon, onion, spring onion",
     kind: "foundation",
-    summary: "One brine, many vegetables. The fastest way to put something sharp next to something rich.",
-    principle: "A pickle is acid on demand. Keep a jar or two in the fridge and a heavy plate always has an answer.",
+    principle: "Vinegar, sugar and salt draw water out of raw vegetables and replace it with brine. Thin cuts pickle in hours; thick cuts take a day.",
     tags: ["pickle", "foundation", "vegetarian", "meal prep", "vietnamese"],
     ingredients: [
       { group: "Brine", items: ["vinegar", "water", "sugar", "salt"] },
@@ -221,8 +213,7 @@ window.RECIPES = [
     name: "Vietnamese Noodle Salad",
     aka: "lemongrass chicken over rice vermicelli",
     kind: "dish",
-    summary: "Chicken thigh marinated in lemongrass and fish sauce over vermicelli, with herbs, đồ chua and a honey-lime sauce.",
-    principle: "Charred, salty chicken; cold noodles; pickles and herbs for brightness; one sauce to tie it together.",
+    principle: "Lemongrass and fish sauce season the chicken, and high heat chars its edges. Cold noodles, đồ chua and the honey-lime sauce add contrast in temperature and acidity.",
     tags: ["vietnamese", "salad", "noodles", "cutting meal", "high-protein", "meal prep", "date night"],
     ingredients: [
       { group: "Chicken", items: ["chicken thigh", "lemongrass, finely diced", "fish sauce"] },
@@ -243,8 +234,7 @@ window.RECIPES = [
     name: "Steak Sandwich",
     aka: "with an arugula, pine nut & parmesan salad",
     kind: "dish",
-    summary: "A good cut of steak, heirloom tomato and arugula on sourdough, with a lemony arugula salad on the side.",
-    principle: "Spend on the steak and the tomato. Everything else is there to stay out of their way.",
+    principle: "The steak and tomato carry most of the flavor, so their quality sets the result. Arugula adds bitterness and the lemon dressing adds acid against the beef fat.",
     tags: ["sandwich", "high-protein", "weekend project", "date night"],
     ingredients: [
       { group: "Sandwich", items: ["quality steak (cut varies)", "heirloom tomato", "arugula", "sourdough"] },
@@ -262,8 +252,7 @@ window.RECIPES = [
     name: "Vodka Pasta",
     aka: "the classic favorite",
     kind: "dish",
-    summary: "Tomato paste cooked until it darkens, a splash of vodka, cream and parmesan. Always good.",
-    principle: "Cook the tomato paste until it turns brick-red, and use pasta water to bring the sauce together.",
+    principle: "Frying tomato paste caramelizes its sugars and deepens its flavor. Starch in the pasta water binds the cream and parmesan into a smooth sauce.",
     tags: ["italian", "pasta", "vegetarian", "weeknight", "date night"],
     ingredients: [
       { group: "Sauce", items: ["butter or olive oil", "onion or shallot", "garlic", "tomato paste", "vodka", "heavy cream", "parmesan", "chili flakes"] },
@@ -281,8 +270,7 @@ window.RECIPES = [
     name: "Red Wine Meatball Sauce",
     aka: "beef, pork or lamb meatballs",
     kind: "dish",
-    summary: "Seared meatballs, the fond lifted with onion, garlic and a little red wine, then rounded out with cream and butter. Over mashed potatoes.",
-    principle: "The same deglaze as the stew, with wine added. Go easy on the wine; cream and butter at the end soften its edge.",
+    principle: "Onion and garlic lift the fond left by the seared meatballs, and red wine adds acidity. Cream and butter round out the wine's tannins.",
     tags: ["sauce", "high-protein", "weeknight", "date night"],
     ingredients: [
       { group: "Meatballs, any of", items: ["beef", "pork", "lamb"] },
@@ -304,8 +292,7 @@ window.RECIPES = [
     name: "Korean Spinach Banchan",
     aka: "sigeumchi namul",
     kind: "dish",
-    summary: "Whole spinach leaves, barely blanched and squeezed dry, dressed with sesame oil, sesame seeds and soy sauce.",
-    principle: "Blanch just past a minute so it's wilted and cooked but not overdone. Squeezing out the water lets the dressing cling instead of sliding off.",
+    principle: "Blanching just past a minute wilts the spinach without breaking it down. Squeezing out the water lets the oil-based dressing cling to the leaves.",
     tags: ["korean", "side", "vegetarian", "quick"],
     ingredients: [
       { group: "Greens", items: ["whole spinach leaves"] },
