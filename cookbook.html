@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cookbook | Richard Sartell</title>
+    <meta name="description" content="A cookbook of principles: stews, Thai and Vietnamese cooking, pickles, and the rest of what I cook.">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/lmroman9-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html" aria-label="Richard Sartell, home">
+          <img src="assets/images/coat-of-arms.png" width="323" height="520" alt="">
+          <span class="brand-name" aria-hidden="true">S</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#work">Work</a>
+          <a href="cookbook.html" aria-current="page">Cookbook</a>
+          <a href="assets/resume/richard-sartell-resume.pdf">R&eacute;sum&eacute;</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- "The Rules" section, hidden for now. Uncomment to bring it back.
+      <section class="section" aria-labelledby="principles-heading">
+        <header class="section-head">
+          <h2 id="principles-heading">The Rules</h2>
+          <p>The things I keep coming back to.</p>
+        </header>
+        <ol class="principles">
+          <li>
+            <strong><span class="numeral">i.</span>Sear first, and mean it.</strong>
+            <p>Browning is the flavor. Dry meat, hot pan, small batches.</p>
+          </li>
+          <li>
+            <strong><span class="numeral">ii.</span>Onion and garlic lift the fond.</strong>
+            <p>Every stew gets deglazed the same way, whatever comes next.</p>
+          </li>
+          <li>
+            <strong><span class="numeral">iii.</span>Salty, sour, sweet, hot.</strong>
+            <p>Fish sauce, lime, sugar or honey, chili. Taste, then fix whichever is missing.</p>
+          </li>
+          <li>
+            <strong><span class="numeral">iv.</span>Acid at the end.</strong>
+            <p>A squeeze of lime or a forkful of pickles fixes a heavy plate.</p>
+          </li>
+          <li>
+            <strong><span class="numeral">v.</span>Fresh against rich.</strong>
+            <p>Raw ginger, onion, herbs or arugula next to anything fried or seared.</p>
+          </li>
+          <li>
+            <strong><span class="numeral">vi.</span>One base, many dialects.</strong>
+            <p>Learn the method once; change the spices and it&rsquo;s a different dish.</p>
+          </li>
+        </ol>
+      </section>
+      -->
+
+      <section class="section" id="table" aria-labelledby="table-heading">
+        <header class="section-head">
+          <div class="ornament-rule" aria-hidden="true"><span class="tile"></span></div>
+          <h1 id="table-heading">The Table</h1>
+          <p>Draw a dish at random, or search and filter by tag.</p>
+        </header>
+
+        <div class="pantry">
+          <aside class="pantry-controls" aria-label="Find a dish">
+            <label class="field-label" for="search">Search</label>
+            <input class="search-input" id="search" type="search" placeholder="pork, lime, soup&hellip;" autocomplete="off">
+            <button class="button draw-button" id="draw" type="button">Draw a dish</button>
+            <p class="match-count" id="match-count" aria-live="polite"></p>
+            <div id="tag-groups"></div>
+            <button class="clear-button" id="clear" type="button" hidden>Clear filters</button>
+          </aside>
+
+          <div>
+            <article class="recipe-card" id="card" aria-live="polite" tabindex="-1"></article>
+            <ul class="recipe-list" id="list" aria-label="Matching dishes"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="wrap">
+        <a href="index.html" aria-label="Home"><img class="footer-crest" src="assets/images/coat-of-arms.png" width="323" height="520" alt=""></a>
+        <div>
+          <p class="motto">Caelum ipsum petimus</p>
+          <p class="motto-translation">We seek heaven itself. &mdash; Sawtell, Co. Somerset</p>
+        </div>
+        <div class="footer-links">
+          <a class="email" href="mailto:thaisartell@gmail.com">thaisartell@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/recipes.js"></script>
+    <script src="js/cookbook.js"></script>
+  </body>
+</html>

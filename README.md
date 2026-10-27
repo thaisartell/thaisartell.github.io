@@ -27,6 +27,19 @@ Detailed case-study scaffolds live in:
 
 Search for `TODO` to find placeholder URLs, missing media, and sections that need confirmed details.
 
+## Edit The Cookbook
+
+Recipes live in `js/recipes.js` as plain objects (name, tags, ingredients, method, variations).
+Add a new entry to `RECIPES`; if it uses a new tag, add that tag to a group in `TAG_GROUPS` so it shows up as a filter.
+Each dish is linkable as `cookbook.html#<slug>`.
+
+## Design Assets
+
+- `assets/fonts/` holds LM Roman 9 (and LM Roman Caps 10 for small caps), subset to woff2.
+- `assets/images/coat-of-arms.png` is the Sawtell coat of arms (header and footer), extracted from `sartellCoatOfArms_primary.jpeg` in `assets/references/` (local only, git-ignored).
+- `assets/images/shield.png` is the Sartel shield used at section breaks, extracted from `sartellCoatofArms_secondary.jpeg`.
+- `assets/images/pixel-sorter.gif` is the hero banner; `pixel-sorter-still.jpg` is its first frame, shown when the visitor prefers reduced motion.
+
 ## Add Images And Media
 
 Place public portfolio assets in:
