@@ -56,20 +56,30 @@
         </div>
       </section>
 
-      <section class="section" id="kitchen" aria-labelledby="kitchen-heading">
-        <header class="section-head">
-          <div class="ornament-rule" aria-hidden="true"><span class="tile"></span></div>
-          <h2 id="kitchen-heading">Kitchen</h2>
-          <p>Recipes enable 1 dish. Principles enable 100.</p>
-        </header>
-        <div class="kitchen-teaser">
-          <div>
-            <p class="smallcaps">Tonight, perhaps</p>
-            <p class="tonight"><a id="tonight-link" href="cookbook.html">Open the cookbook</a></p>
+      <div class="section split">
+        <section id="cookbook" aria-labelledby="cookbook-heading">
+          <header class="section-head">
+            <div class="ornament-rule" aria-hidden="true"><span class="tile"></span></div>
+            <h2 id="cookbook-heading">Cookbook</h2>
+            <p>Recipes enable 1 dish. Principles enable 100.</p>
+          </header>
+          <div class="kitchen-teaser">
+            <div>
+              <p class="smallcaps">From the cookbook</p>
+              <p class="tonight"><a id="tonight-link" href="cookbook.html">Open the cookbook</a></p>
+            </div>
+            <a class="button button-ghost" href="cookbook.html">Access my cookbook &rarr;</a>
           </div>
-          <a class="button button-ghost" href="cookbook.html">The cookbook &rarr;</a>
-        </div>
-      </section>
+        </section>
+
+        <section class="epigraph-panel" aria-label="Epigraphs">
+          <div class="ornament-rule" aria-hidden="true"><span class="tile"></span></div>
+          <ul class="epigraphs">
+            <li>&ldquo;Self-confidence is the first requisite to great undertakings.&rdquo;<cite>Samuel Johnson</cite></li>
+            <li>&ldquo;The man that loves walking will walk further than the man that loves the destination.&rdquo;<cite>Sal Di Stefano</cite></li>
+          </ul>
+        </section>
+      </div>
 
       <section class="section" id="projects" aria-labelledby="projects-heading">
         <header class="section-head">
@@ -80,7 +90,7 @@
         <div class="project-list">
           <article class="project" id="project-syndex">
             <div class="project-copy">
-              <p class="project-kicker"><span class="numeral">i.</span><span>STRIVE Medical, University of Minnesota</span></p>
+              <p class="project-kicker"><span class="numeral" aria-hidden="true"></span><span>STRIVE Medical, University of Minnesota</span></p>
               <h3><a href="projects/syndex.html">SynDex</a></h3>
               <p class="project-subtitle">Robotic surgical simulation system</p>
               <p>
@@ -97,7 +107,7 @@
 
           <article class="project" id="project-linux-ics">
             <div class="project-copy">
-              <p class="project-kicker"><span class="numeral">ii.</span><span>Boston Scientific</span></p>
+              <p class="project-kicker"><span class="numeral" aria-hidden="true"></span><span>Boston Scientific</span></p>
               <h3><a href="projects/linux-internet-connection-sharing.html">Linux Internet Connection Sharing</a></h3>
               <p class="project-subtitle">R&amp;D systems engineering internship</p>
               <p>
@@ -113,7 +123,7 @@
 
           <article class="project" id="project-smart-nas">
             <div class="project-copy">
-              <p class="project-kicker"><span class="numeral">iii.</span><span>Senior Design Project</span></p>
+              <p class="project-kicker"><span class="numeral" aria-hidden="true"></span><span>Senior Design Project</span></p>
               <h3><a href="projects/smart-network-attached-storage.html">Smart Network-Attached Storage</a></h3>
               <p class="project-subtitle">Embedded control and hardware validation</p>
               <p>
@@ -123,13 +133,13 @@
               <a class="read-more" href="projects/smart-network-attached-storage.html">Learn more &rarr;</a>
             </div>
             <figure class="project-figure">
-              <img src="assets/diagrams/snasSystemDiagram.jpg" width="1640" height="567" loading="lazy" alt="Smart NAS system diagram">
+              <img src="assets/diagrams/snasAssemblyPhoto.png" width="233" height="166" loading="lazy" alt="Physical Smart NAS assembly with its stacked controller and protection circuit boards">
             </figure>
           </article>
 
           <article class="project" id="project-ecg">
             <div class="project-copy">
-              <p class="project-kicker"><span class="numeral">iv.</span><span>Junior Design Project</span></p>
+              <p class="project-kicker"><span class="numeral" aria-hidden="true"></span><span>Junior Design Project</span></p>
               <h3><a href="projects/electrocardiogram-acquisition-system.html">Electrocardiogram (ECG/EKG) System</a></h3>
               <p class="project-subtitle">Analog front end, PCB, MCU acquisition, UART visualization</p>
               <p>
@@ -180,13 +190,6 @@
         </ol>
       </section>
 
-      <section class="section section-epigraphs" aria-label="Epigraphs">
-        <div class="ornament-rule" aria-hidden="true"><span class="tile"></span></div>
-        <ul class="epigraphs">
-          <li>&ldquo;Self-confidence is the first requisite to great undertakings.&rdquo;<cite>Samuel Johnson</cite></li>
-          <li>&ldquo;The man that loves walking will walk further than the man that loves the destination.&rdquo;<cite>Sal Di Stefano</cite></li>
-        </ul>
-      </section>
     </main>
 
     <footer class="site-footer" id="contact">

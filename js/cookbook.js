@@ -31,6 +31,7 @@
       r.name, r.aka, r.principle, r.tags.join(" "),
       (r.ingredients || []).map(function (g) { return g.items.join(" "); }).join(" "),
       (r.variations || []).map(function (v) { return v.name + " " + v.note; }).join(" "),
+      (r.notes || []).join(" "),
     ].join(" "));
   });
 
@@ -94,6 +95,8 @@
     var vars = r.variations ? '<div class="full"><h3>Variations</h3><dl class="variations">' +
       r.variations.map(function (v) { return "<dt>" + esc(v.name) + "</dt><dd>" + esc(v.note) + "</dd>"; }).join("") +
       "</dl></div>" : "";
+    var notes = r.notes ? '<div class="full"><h3>Notes</h3>' +
+      r.notes.map(function (n) { return "<p>" + esc(n) + "</p>"; }).join("") + "</div>" : "";
     var serve = r.serve ? '<div class="full"><h3>Serve</h3><p>' + esc(r.serve) + "</p></div>" : "";
     var related = r.related ? '<div class="full related"><h3>See also</h3>' +
       r.related.filter(function (s) { return bySlug[s]; }).map(function (s) {
@@ -101,7 +104,6 @@
       }).join("") + "</div>" : "";
 
     card.innerHTML =
-      '<span class="ornament" aria-hidden="true"></span>' +
       '<p class="card-label smallcaps">' + (r.kind === "foundation" ? "A foundation" : "A dish") + "</p>" +
       "<h2>" + esc(r.name) + "</h2>" +
       (r.aka ? '<p class="aka">' + esc(r.aka) + "</p>" : "") +
@@ -110,7 +112,7 @@
         (r.principle ? '<p class="principle">' + esc(r.principle) + "</p>" : "") +
         "<div><h3>What goes in</h3>" + ing + "</div>" +
         "<div><h3>Method</h3>" + method + "</div>" +
-        vars + serve + related +
+        vars + notes + serve + related +
       "</div>";
   }
 

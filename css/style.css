@@ -244,7 +244,7 @@ h4 {
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
-  min-height: 460px;
+  min-height: clamp(460px, 72vh, 720px);
   overflow: hidden;
   border: 10px solid var(--brown-raised);
   background: var(--brown);
@@ -380,23 +380,15 @@ h4 {
   content: "";
 }
 
+/* Sartel shield, used as a mask so it takes the text color. */
 .tile {
   display: block;
   flex: none;
   width: 30px;
   height: 39px;
-}
-
-/* Sartel shield, used as a mask so it takes the text color. */
-.tile,
-.ornament {
   background: currentColor;
   -webkit-mask: url("../assets/images/shield.png") center / contain no-repeat;
   mask: url("../assets/images/shield.png") center / contain no-repeat;
-}
-
-.ornament {
-  display: block;
 }
 
 .section-head h1,
@@ -448,11 +440,16 @@ h4 {
   color: var(--ink-soft);
 }
 
+/* Maltese cross marker, masked so it takes the text color. */
 .numeral {
-  font-family: var(--caps);
-  font-size: 1rem;
-  letter-spacing: 0.08em;
-  text-transform: lowercase;
+  display: inline-block;
+  flex: none;
+  align-self: center;
+  width: 0.95em;
+  height: 0.95em;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10.4 10.4 5.5 1 12 4.2 18.5 1 13.6 10.4ZM13.6 10.4 23 5.5 19.8 12 23 18.5 13.6 13.6ZM13.6 13.6 18.5 23 12 19.8 5.5 23 10.4 13.6ZM10.4 13.6 1 18.5 4.2 12 1 5.5 10.4 10.4ZM10.4 10.4H13.6V13.6H10.4Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10.4 10.4 5.5 1 12 4.2 18.5 1 13.6 10.4ZM13.6 10.4 23 5.5 19.8 12 23 18.5 13.6 13.6ZM13.6 13.6 18.5 23 12 19.8 5.5 23 10.4 13.6ZM10.4 13.6 1 18.5 4.2 12 1 5.5 10.4 10.4ZM10.4 10.4H13.6V13.6H10.4Z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 .project h3 {
@@ -592,27 +589,39 @@ h4 {
   font-size: 1.4rem;
 }
 
-/* ---------- Epigraphs + footer ---------- */
+/* ---------- Cookbook + epigraphs row, footer ---------- */
 
 .job:last-child {
   padding-bottom: 0;
 }
 
-.section-epigraphs {
-  padding-top: 2rem;
-  padding-bottom: 0;
+/* Cookbook teaser on the left, epigraphs on the right, sharing one row. */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
 }
 
-.section-epigraphs + * {
-  margin-top: 0;
+.split .kitchen-teaser {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: start;
+}
+
+.epigraph-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.epigraph-panel .epigraphs {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .epigraphs li:last-child {
   margin-bottom: 0;
-}
-
-main:has(.section-epigraphs) + .site-footer {
-  margin-top: 2.5rem;
 }
 
 .epigraphs {
@@ -1028,13 +1037,6 @@ main:has(.section-epigraphs) + .site-footer {
   background: #fffefb;
 }
 
-.recipe-card .ornament {
-  width: 28px;
-  height: 36px;
-  margin: 0 auto 0.75rem;
-  color: var(--ink);
-}
-
 .recipe-card .card-label {
   margin-bottom: 0.25rem;
   color: var(--ink-soft);
@@ -1195,6 +1197,10 @@ main:has(.section-epigraphs) + .site-footer {
 
 @media (max-width: 860px) {
   .hero-frame {
+    grid-template-columns: 1fr;
+  }
+
+  .split {
     grid-template-columns: 1fr;
   }
 
